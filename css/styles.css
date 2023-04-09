@@ -94,14 +94,14 @@ nav ul li a:before {
 
 /*hero*/
 
-main {
+.hero {
     display: flex;
     gap: 7em;
     margin-top: 10em;
 }
 
 .hero-left {
-    width: 45%;
+    width: 65%;
 }
 
 .hero-right {
@@ -111,7 +111,8 @@ main {
 .hero-subtitle {
     font-size: 3rem;
     margin: 0;
-    color: #2d3436;
+    color: #636e72;
+    font-weight: 700;
 }
 
 .hero-title {
@@ -120,8 +121,9 @@ main {
 }
 
 .hero-description {
+    font-weight: 500;
     font-size: 1.8em;
-    color: #2d3436;
+    color: #485460;
 }
 
 .hero-btns {
@@ -130,7 +132,7 @@ main {
 
 .hero-btns, .hero-right-btn {
     display: flex;
-    gap: 2em;
+    gap: 3em;
 }
 
 .hero-left-btn {
@@ -140,23 +142,38 @@ main {
     color: white;
     text-decoration: none;
     border-radius: 1.9em;
-    padding: 1em 2em;
+    padding: 0.6em 2em;
+    padding-top: 1.1em;
+    height: 2em;
+    white-space: nowrap;
 }
 
 .hero-right-btn {
     font-size: 1.8rem;
     text-decoration: none;
-    color: black;
-    display: block;
-    padding: 1em 0;
+    color: #16a085;
+    display: flex;
+    padding: 1.1em 0;
+    height: 2em;
+    gap: 0;
+}
+
+main div span {
+    white-space:nowrap;
 }
 
 .hero-right-btn svg {
-    width: 20px;
-    transition: transform .3s;
+    width: 25px;
+    margin-left: 0.5em;
+    margin-top: 0.1em;
+    fill: #16a085;
 }
 
 .hero-right img {
-    width: 30em;
-    height: 30em;
+    margin-top: -3em;
+    margin-right: 5em;
+    width: 35em;
+    border-radius: 18em;
+    outline-offset: -0.5em;
+    background-image: radial-gradient(#bdc3c7, #ecf0f1, white);
 }
