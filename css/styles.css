@@ -35,19 +35,128 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: black;
+    color: #be2edd;
     text-transform: uppercase;
     font-size: 1.6rem;
     position: relative;
+    white-space: nowrap;
+}
+
+.hire-me {
+    font-weight: bold;
+    color: white;
+    border: solid #8e44ad;
+    padding: .6em 1em;
+    border-radius: 1.6em;
+    background-color: #8e44ad;
 }
 
 .logo {
     font-family: 'Poiret One', cursive;
     text-decoration: none;
-    color: black;
+    color: #8e44ad;
     font-weight: bold;
     letter-spacing: 0.2rem;
     text-transform: uppercase;
     font-size: 2rem;
     white-space: nowrap;
+}
+
+nav ul li a:hover {
+    color: #e056fd;
+    text-shadow: 0 0 30px #be2edd;
+}
+
+nav ul li a.active:before {
+    position: absolute;
+    content: "";
+    width: 40%;
+    height: 1px;
+    border-bottom: 2px solid #be2edd;
+    bottom: -6px;
+}
+
+nav ul li a:before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 1px;
+    border-bottom: 2px solid rgb(rgb(253, 121, 168));
+    bottom: -6px;
+    transition: width .3s;
+}
+
+.hire-me:hover {
+    color: white;
+    border: solid #9b59b6;
+    background-color: #9b59b6;
+}
+
+/*hero*/
+
+main {
+    display: flex;
+    gap: 7em;
+    margin-top: 10em;
+}
+
+.hero-left {
+    width: 45%;
+}
+
+.hero-right {
+    flex-grow: 1;
+}
+
+.hero-subtitle {
+    font-size: 3rem;
+    margin: 0;
+    color: #2d3436;
+}
+
+.hero-title {
+    font-size: 5rem;
+    margin: 0;
+}
+
+.hero-description {
+    font-size: 1.8em;
+    color: #2d3436;
+}
+
+.hero-btns {
+    margin: 5em 0;
+}
+
+.hero-btns, .hero-right-btn {
+    display: flex;
+    gap: 2em;
+}
+
+.hero-left-btn {
+    background-color: #00b894;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 1.9em;
+    padding: 1em 2em;
+}
+
+.hero-right-btn {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 1em 0;
+}
+
+.hero-right-btn svg {
+    width: 20px;
+    transition: transform .3s;
+}
+
+.hero-right img {
+    width: 30em;
+    height: 30em;
 }
