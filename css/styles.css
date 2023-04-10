@@ -6,6 +6,7 @@ html {
 
 body {
     margin: 0;
+    background-color: #ecf0f1;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -35,61 +36,43 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: #be2edd;
+    color: #636e72;
     text-transform: uppercase;
     font-size: 1.6rem;
     position: relative;
     white-space: nowrap;
 }
 
+nav ul li a:hover {
+    color: #2c3e50;
+    text-shadow: 0 0 10px #1b1b1b34;
+}
+
 .hire-me {
     font-weight: bold;
     color: white;
-    border: solid #8e44ad;
     padding: .6em 1em;
     border-radius: 1.6em;
-    background-color: #8e44ad;
+    background-image: linear-gradient(#a55eea, #8854d0);
 }
 
 .logo {
-    font-family: 'Poiret One', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
     text-decoration: none;
-    color: #8e44ad;
-    font-weight: bold;
+    background: -webkit-linear-gradient(#a55eea, #8854d0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 400;
     letter-spacing: 0.2rem;
     text-transform: uppercase;
     font-size: 2rem;
     white-space: nowrap;
 }
 
-nav ul li a:hover {
-    color: #e056fd;
-    text-shadow: 0 0 30px #be2edd;
-}
-
-nav ul li a.active:before {
-    position: absolute;
-    content: "";
-    width: 40%;
-    height: 1px;
-    border-bottom: 2px solid #be2edd;
-    bottom: -6px;
-}
-
-nav ul li a:before {
-    position: absolute;
-    content: "";
-    width: 0%;
-    height: 1px;
-    border-bottom: 2px solid rgb(rgb(253, 121, 168));
-    bottom: -6px;
-    transition: width .3s;
-}
-
 .hire-me:hover {
     color: white;
-    border: solid #9b59b6;
-    background-color: #9b59b6;
+    background-image: linear-gradient(#9b59b6, #8e44ad);
+    text-shadow: none;
 }
 
 /*hero*/
@@ -111,11 +94,13 @@ nav ul li a:before {
 .hero-subtitle {
     font-size: 3rem;
     margin: 0;
+    margin-bottom: -0.3em;
     color: #636e72;
     font-weight: 700;
 }
 
 .hero-title {
+    color: #2c3e50;
     font-size: 5rem;
     margin: 0;
 }
@@ -136,15 +121,15 @@ nav ul li a:before {
 }
 
 .hero-left-btn {
-    background-color: #00b894;
-    font-size: 1.8rem;
+    background-image: linear-gradient(#1abc9c, #16a085);
+    font-size: 2rem;
     font-weight: bold;
     color: white;
     text-decoration: none;
     border-radius: 1.9em;
     padding: 0.6em 2em;
-    padding-top: 1.1em;
-    height: 2em;
+    padding-top: 0.6em;
+    height: 1.5em;
     white-space: nowrap;
 }
 
@@ -153,7 +138,7 @@ nav ul li a:before {
     text-decoration: none;
     color: #16a085;
     display: flex;
-    padding: 1.1em 0;
+    padding: 0.9em 0;
     height: 2em;
     gap: 0;
 }
@@ -175,5 +160,6 @@ main div span {
     width: 35em;
     border-radius: 18em;
     outline-offset: -0.5em;
-    background-image: radial-gradient(#bdc3c7, #ecf0f1, white);
+    background-image: linear-gradient(#ecf0f1, #e1e6e7);
+    box-shadow: 0 10px 20px lightgray;
 }
