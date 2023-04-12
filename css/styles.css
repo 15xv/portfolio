@@ -71,7 +71,7 @@ nav ul li a:hover {
 
 .hire-me:hover {
     color: white;
-    background-image: linear-gradient(#9b59b6, #8e44ad);
+    background-image: linear-gradient(#b86bd6, #8e44ad);
     text-shadow: none;
 }
 
@@ -133,6 +133,10 @@ nav ul li a:hover {
     white-space: nowrap;
 }
 
+.hero-left-btn:hover {
+    background-image: linear-gradient(#2ecc71, #27ae60);
+}
+
 .hero-right-btn {
     font-size: 1.8rem;
     text-decoration: none;
@@ -164,10 +168,17 @@ main div span {
     box-shadow: 0 10px 20px lightgray;
 }
 
-.scroll svg {
+/*scrolling icon*/
+
+.scroll-icon {
     display: block;
-    width: 6em;
+    width: 4em;
     margin: auto;
+    transition: transform 0.3s ease;
+}
+
+.scroll-icon:hover {
+    transform: rotate(35deg);
 }
 
 .second {
